@@ -1,0 +1,85 @@
+@import "@/assets/layout/styles/__variables.sass"
+.container
+   width: 95vw
+   max-width: 1336px
+   min-height: 75vh
+   margin: 0 auto
+   padding-top: 1rem
+   @media (max-width: 500px)
+      padding-top: 1rem
+      width: 95vw
+.baner-container
+    display: flex
+    flex-direction: row
+
+.left-baner-container
+    width: 50%
+    margin: 0.5rem
+    background: url("@/assets/images/groupbuy-baner-left.webp") no-repeat
+    height: 15rem
+    border-radius: 10px
+    @media (max-width: 900px)
+      background: url("@/assets/images/groupbuy-tab.webp") no-repeat
+      width: 100%
+    @media (max-width: 500px)
+      background: url("@/assets/images/groupbuy-mobile.webp") no-repeat
+      width: 100%
+.right-baner-container
+    width: 50%
+    margin: 0.5rem
+    background: url("@/assets/images/groupbuy-baner-right.webp") no-repeat
+    height: 15rem
+    border-radius: 10px
+    @media (max-width: 900px)
+      display: none
+.tabs-section
+    display: flex,
+    margin: 1rem
+.button
+  width: 150px
+  font-size: 18px
+  margin: 0 15px
+  background: none
+  border: none
+  outline: none
+  @media (max-width: 500px)
+    font-size: 1rem
+.selected-btn
+   width: 150px
+   background: none
+   border: none
+   outline: none
+   color: #D50567
+   border-bottom: solid 2px #D50567
+   padding-bottom: 0.5rem
+   margin: 0 15px
+   font-size: 18px
+   @media (max-width: 500px)
+    font-size: 1rem
+    padding-bottom: 0.5rem
+.infinite-card-main-container
+  padding-top: 1rem
+  display: grid
+  row-gap: 1rem
+  overflow-y: hidden !important
+  justify-content: space-between
+  width: 100%
+  @media screen and (min-width: $md)
+    grid-template-rows: auto
+    grid-template-columns: auto auto auto auto auto
+  @media screen and (max-width: $md)
+    justify-content: space-around
+    grid-template-rows: auto
+    grid-template-columns: auto auto auto
+  @media screen and (max-width: $sm)
+    grid-template-rows: auto auto
+    grid-template-columns: auto
+.item-details-card
+  cursor: pointer
+  margin-right: 1rem
+  @media (max-width: 500px)
+    margin: 0rem
+.bottom-section
+  margin: 1rem
+  @media (max-width: 500px)
+    margin: 0rem

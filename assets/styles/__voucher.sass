@@ -1,0 +1,143 @@
+@import "@/assets/layout/styles/__variables.sass"
+
+button
+  border: none
+  padding: 0
+  border-radius: 3px
+  cursor: pointer
+
+.custom-tabs
+  display: block !important
+  
+.voucher
+  display: flex
+  cursor: pointer
+  background: url("@/assets/images/voucher-bg.png") no-repeat
+  min-width: 273px
+  min-height: 63.98px
+  margin-right: 15px
+  margin-bottom: 10px
+
+  p
+    margin-top: 5px
+    font-size: 12px
+
+  img
+    height: 24px
+
+  .voucher-title
+    flex-basis: 25%
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+    justify-content: center
+    text-align: center
+    align-items: center
+
+.voucher-body-container
+  flex-basis: 75%
+  position: relative
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  margin-left: 10px
+
+  .voucher-collect
+    height: 25px
+    width: 65px
+    background: #D50567
+    color: $dark-color-9
+    border: none
+    border-radius: 3px
+    padding: 0
+  .voucher-body
+    h2
+      font-size: 14px
+      color: #D50567
+    h5
+      font-size: 10px
+
+  .voucher-collect
+    font-size: 12px
+    position: absolute
+    right: 5px
+    top: 10px
+
+  .valid-date
+    color: #757575
+    font-size: 9px
+
+.content-tab
+  display: flex
+  flex-wrap: wrap
+  flex-direction: column
+  align-content: center
+  min-width: 380px
+
+// <-- VOUCHER PAGE STYLINGS -->
+.voucher-page-container
+  min-height: 75vh
+  max-width: 1336px
+  margin: 0 auto
+  width: 80vw
+
+  header
+    display: flex
+    align-items: center
+    margin: 25px 0
+
+    h2
+      font-size: 1.5rem
+
+  .back-arrow
+    margin-right: 10px
+    line-height: 1.8rem
+
+  .voucher-btn
+    height: 46px
+    width: 190px
+    margin: 25px 5px
+    background: #999
+    background-size: cover
+
+  .recommended-btn
+    background-image: url('@/assets/images/voucher-btn-recommended.png')
+    color: white
+
+  .collected-btn
+    background-image: url('@/assets/images/voucher-btn-collected.png')
+    color: white
+
+  .default-btn
+    background-image: url('@/assets/images/voucher-btn-default.png')
+    color: #222
+
+.all-vouchers-container
+  background: #fff
+  min-height: 50vh
+
+.tabs-container
+  display: flex
+  justify-content: center
+  margin-top: 10px
+
+  button
+    height: 30px
+    width: 150px
+    font-size: 18px
+    margin: 0 15px
+    background: none
+    border-radius: 0
+
+  .selected-btn
+    border-bottom: solid 2px #D50567
+
+.voucher-cards
+  display: flex
+  justify-content: center
+  max-width: $lg
+  margin: 25px auto
+  flex-wrap: wrap
+
+.btn-container
+  margin-left: 20px

@@ -1,0 +1,123 @@
+import {createApp} from 'vue';
+import {
+    createVuesticEssential,
+    VaToastPlugin,
+    VaModal,
+    VaNavbar,
+    VaNavbarItem,
+    VaIcon,
+    VaInput,
+    VaSelect,
+    VaChip,
+    VaCard,
+    VaCardBlock,
+    VaCardTitle,
+    VaCardContent,
+    VaCardActions,
+    VaImage,
+    VaAvatar,
+    VaAspectRatio,
+    VaToast,
+    VaButton,
+    VaDropdown,
+    VaDropdownContent,
+    VaForm,
+    VaDivider,
+    VaCheckbox,
+    VaCarousel,
+    VaScrollContainer,
+    VaDatePicker,
+    VaTabs,
+    VaTab,
+    VaSeparator,
+    VaRating,
+    VaProgressBar,
+    VaCounter,
+    VaBadge,
+    VaInfiniteScroll,
+    VaTreeView,
+    VaSwitch,
+    VaAccordion,
+    VaCollapse,
+    VaFileUpload,
+    VaRadio,
+    VaDateInput,
+} from "vuestic-ui";
+ 
+import App from '@/App';
+import "vuestic-ui/css";
+
+const app = createApp(App);
+app.use(
+    createVuesticEssential({
+        components: {
+            VaNavbar, VaNavbarItem, VaIcon,
+            VaInput, VaSelect, VaChip,
+            VaCard, VaCardBlock, VaCardTitle,
+            VaCardContent, VaImage, VaAvatar,
+            VaAspectRatio, VaButton, VaModal,
+            VaCardActions, VaToast, VaDropdown,
+            VaDropdownContent, VaForm, VaDivider,
+            VaCarousel, VaCheckbox, VaScrollContainer,
+            VaDatePicker, VaTabs, VaTab,
+            VaSeparator,VaRating, VaProgressBar,
+            VaCounter, VaBadge, VaInfiniteScroll,
+            VaTreeView, VaSwitch, VaAccordion, VaCollapse, VaFileUpload, VaRadio,VaDateInput,
+        },
+        plugins: {VaToastPlugin},
+        config: {
+            breakpoint: {
+                enable: true,
+                bodyClass: false,
+                thresholds: {
+                    xs: 0,
+                    sm: 320,
+                    md: 768,
+                    lg: 1024,
+                    xl: 1280,
+                },
+            },
+            colors:{
+                variables: {
+                    //primary: "#2DA771",
+                    primary: "#2F80ED",
+                    secondary: "#2D9CDB",
+                    success: "#40e583",
+                    info: "#AE2DDB",
+                    danger: "#e34b4a",
+                    warning: "#ffc200",
+
+                    gray: "#babfc2",
+                    dark: "#34495e",
+                    mainThemeColor: "#EE6969",
+                    darkColor1: "#000",
+                    darkColor2: "#333333",
+                    darkColor3: "#4F4F4F",
+                    darkColor4: "#828282",
+                    darkColor5: "#BDBDBD",
+                    darkColor6: "#E0E0E0",
+                    darkColor7: "#F2F2F2",
+                    darkColor8: "#FFFFFF",
+                    orange: "#FF8111",
+                    orangeShaded: "#FFF3E5",
+                    green: "#2DA771",
+                    greenShaded: "#E5FFE8",
+                    blue: "#2D9CDB",
+                    blueShaded: "#EEF6F8",
+                    blueDark: "#2F80ED",
+                    red: "#DB2D2D",
+                    redShaded: "#FFECED",
+                    purple: "#AE2DDB",
+                    purpleShaded: "#F4EEF8",
+                    grey: "#828282",
+                    greyShaded: "#F2F2F2",
+                    desaturatedBlue: "#273444",
+                    VeryDarkBlue: "#21262C",
+                    GrayLight: "#BDBDBD",
+                }
+            }
+        },
+    })
+)
+
+export default app;

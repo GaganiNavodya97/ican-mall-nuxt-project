@@ -1,0 +1,141 @@
+@import "@/assets/layout/styles/__variables.sass"
+
+.main-footer-container
+  margin-top: 1rem
+  width: 100%
+  background-color: $desaturated-blue
+  @media screen and (max-width : $sm)
+    margin-bottom: 3.75rem
+  @media screen and (min-width : $sm)
+    margin-bottom: 4.75rem
+  @media screen and (min-width : $md)
+    margin-bottom: 0
+  .footer-container
+    display: flex
+    flex-direction: column
+    margin: auto
+    padding: 1rem
+    width: 100%
+    max-width: $section-max-width
+    .footer-description-section
+      display: grid
+      width: 100%
+      grid-template-rows: auto
+      @media screen and (min-width : $md)
+        grid-template-columns: 25% 25% 25% 25%
+        grid-template-areas: "first-column-area second-column-area third-column-area fourth-column-area"
+      @media screen and (max-width : $md)
+        grid-template-columns: 1fr 1fr 1fr
+        grid-template-areas: "first-column-area second-column-area fourth-column-area"
+      .link
+        color: $dark-color-8
+      .lists
+        text-align: left
+        font-size: 1rem
+        line-height: 1.188rem
+        padding-top: 1.25rem
+        @media screen and (max-width : $md)
+          font-size: 0.675rem
+          line-height: 1.388rem
+          padding-top: 0.7rem
+      .first-Column, .second-column
+        max-width: 8rem
+      .first-Column, .second-column, .third-column
+        span
+          color: $dark-color-5
+      .first-Column
+        grid-area: first-column-area
+      .second-column
+        grid-area: second-column-area
+      .third-column
+        grid-area: third-column-area
+        @media screen and (max-width: $md)
+          display: none
+        .icons-set
+          width: 100%
+          display: flex
+          justify-content: space-between
+          max-width: 10rem
+          padding-top: 1.25rem
+          svg
+            width: 2.5rem !important
+            height: 2.5rem !important
+      .fourth-column
+        grid-area: fourth-column-area
+        width: 100%
+        @media screen and (min-width: $md)
+          max-width: 20rem
+        @media screen and (max-width: $md)
+          max-width: 10rem
+        .qr-and-logo-section
+          display: flex
+          width: 100%
+          justify-content: space-between
+          flex-direction: row
+          padding: 0.3rem
+          img
+            width: 7.063rem !important
+            height: 7.063rem !important
+            @media screen and ( max-width : 1182px )
+              width: 5.438rem !important
+              height: 5.438rem !important
+            @media screen and ( max-width : $md )
+              width: 3.438rem !important
+              height: 3.438rem !important
+    .social-icon-on-tab-mobile
+      width: 100%
+      padding: 0.01rem
+      margin-top: 1rem
+      @media screen and (min-width : $md)
+        display: none
+      @media screen and (max-width : $md)
+        display: flex
+        justify-content: center
+        flex-direction: row
+      .social-icon-set
+        display: flex
+        margin: auto
+        svg
+          padding: 0 1rem 0 1rem
+    .app-gallery-section
+      display: flex
+      width: 100%
+      align-items: center
+      justify-content: space-between
+      flex-direction: row
+      img
+        object-fit: cover
+
+        @media screen and ( max-width : 1182px )
+          width: 7.5rem !important
+          height: 2.8rem !important
+        @media screen and (max-width : $md)
+          width: 4.5rem !important
+          height: 1.563rem !important
+        @media screen and (min-width : 1182px)
+          width: 9.375rem !important
+          height: 3.25rem !important
+  .reserved-container
+    background-color: $Very-dark-blue
+    display: flex
+    align-items: center
+    height: 5.313rem
+    @media screen and (max-width : $md)
+      height: 4.313rem
+    span
+      display: block
+      width: 100%
+      text-align: center
+      color: $dark-color-8
+      @media screen and (max-width : $md)
+        font-size: 0.75rem
+      @media screen and (min-width : $md)
+        font-size: 0.9rem
+
+.app-store-img
+  padding-top: 0.4rem
+  @media screen and (max-width : $sm)
+    padding-top: 0.11rem
+
+dt
+  color: $dark-color-9

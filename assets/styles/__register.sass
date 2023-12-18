@@ -1,0 +1,84 @@
+@import "@/assets/layout/styles/__variables.sass"
+
+.scroll-container
+  max-height: 75vh
+  @media (max-width: 835px)
+    max-height: 100vh
+.cards-container
+  display: flex
+  max-width: 100vw
+  height: 100%
+  padding: 1rem
+  @media (max-width: 835px)
+    width: 100%
+.img-card
+  width: 70%
+  height: 95vh
+  @media (max-width: 835px)
+    display: none
+
+.form-card
+  width: 30%
+  padding: 0.5rem
+  padding-bottom: 0.25rem
+  padding-left: 3rem
+  padding-right: 3rem
+  @media (max-width: 835px)
+    width: 100%
+    height: 100%
+    padding-bottom: 2rem
+    @media (max-width: 415px)
+      padding-left: 1rem
+      padding-right: 1rem
+
+.form-header-container
+  margin-top: 0rem
+
+.header-title
+  color: $dark-color-1
+  margin-top: 0.5rem
+  font-size: 1.5rem
+  text-align: left
+
+.header-description
+  margin-top: 0.25rem
+  margin-bottom: 0.25rem
+  color: $dark-color-1
+  font-size: 0.875rem
+  text-align: left
+
+.reg-toggle
+  color: $blue-dark
+  cursor: pointer
+  width: max-content
+  float: right
+
+.form-container
+  text-align: left
+  margin-top: 1rem
+
+.input-tag
+  display: flex
+
+.input-container
+  margin-top: 1rem
+  font-size: 0.875rem
+
+.agreement
+  display: flex
+  margin-top: 0.5rem
+  font-size: 0.875rem
+  align-items: center
+
+.agreement-check-box
+  margin-right: 0.5rem
+
+.privacy-link
+  margin-left: 0.5rem
+  cursor: pointer
+  color: $blue-dark
+  text-decoration: underline
+
+.button
+  width: 100%
+  margin-top: 1rem

@@ -1,0 +1,90 @@
+@import "@/assets/layout/styles/__variables.sass"
+
+.container-parent
+    max-width: $lg
+    margin: 1rem auto
+    padding: 1rem 0
+    min-height: 60vh
+    display: flex
+    justify-content: center
+    align-items: center
+    background: $dark-color-8
+
+.design-section
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+//   background-color: #1f1f1f
+  min-height: 100vh
+  padding: 100px 0
+  width: 100%
+
+.design
+  display: flex
+  align-items: center
+  justify-content: center
+
+.timeline
+  width: 100%
+  height: auto
+  max-width: 800px
+  margin: 0 auto
+  display: flex
+  flex-direction: column
+
+.timeline-content
+  padding: 0 20px 20px 20px
+//   min-width: 100px
+//   color: #1f1f1f
+  border-radius: 5px
+//   color: white
+//   padding: 1.75rem
+  transition: 0.4s ease
+//   overflow-wrap: break-word !important
+  margin: 1rem
+  margin-bottom: 20px
+  border-radius: 6px
+//   min-width: 5rem
+
+.timeline-component
+  margin: 0px 20px 30px 20px
+
+  h3,p
+    min-width: 4rem
+
+.left-box
+    text-align: right
+
+.timeline
+  display: grid
+  grid-template-columns: 1fr 3px 1fr
+
+.timeline-middle
+  position: relative
+  background: $dark-color-6
+  width: 2px
+  height: 100%
+
+.main-middle
+  opacity: 0
+
+.timeline-circle
+  position: absolute
+  top: 0
+  left: 50%
+  width: 12.5px
+  height: 12.5px
+  border-radius: 50%
+  background: #6fcf97
+  transform: translateX(-50%)
+
+.header
+  min-height: 7vh
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+  h1
+    font-size: 1.45rem

@@ -1,0 +1,465 @@
+@import "@/assets/layout/styles/__variables.sass"
+
+.item
+  padding: 0.5rem
+  background-color: $dark-color-8
+  border-radius: 0.313rem
+  border: 0.063rem solid $dark-color-6
+  height: 11rem
+  &:not(:last-child)
+  margin-right: 1rem
+  margin-bottom: 1rem
+  @media (max-width: 900px)
+   margin-left: 1rem
+.header-section
+  display: flex
+.left-section
+  display: block
+
+.item-details
+  display: block
+  padding: 0.3rem
+  @media (max-width: 415px)
+    padding-right: 0rem
+.title
+  text-align: left
+  color: $dark-color-1
+  font-size: 1rem
+  line-height: 1rem
+  font-weight: 700
+  margin-left: 0.5rem
+.user-details
+  margin-top: 2rem
+
+.name
+  height: 1.063rem
+  font-size: 0.938rem
+  max-width: 10rem
+  line-height: 1rem
+  color: $dark-color-3
+  text-align: left
+  font-weight: 600
+  text-overflow: ellipsis
+  overflow: hidden
+  white-space: nowrap
+  @media (max-width: 360px)
+    overflow: hidden
+.default-addr
+   margin-left: 1rem
+   font-size: 0.8rem
+   color: #F97C7C 
+   font-weight: 400
+.default-addr1
+   font-size: 0.8rem
+   color: #F97C7C 
+   font-weight: 400
+
+   @media screen and ( max-width: 500px )
+      display: none
+.default-addr1-mobile
+    font-size: 0.8rem
+    color: #F97C7C 
+    font-weight: 400
+    padding-top: 0.7rem
+    @media screen and ( min-width: 500px )
+      display: none
+.Address-line
+  height:1.063rem
+  font-size: 0.938rem
+  line-height: 1rem
+  color: $grey
+  text-align: left
+  @media (max-width: 360px)
+  overflow: hidden
+
+.item-right-section
+  text-align: right
+
+.address-change-btn
+  text-align: right
+  padding-left: 1rem
+  padding-right: 1rem
+  margin-left: 6rem
+
+//change button modal styles
+.modal
+  position: relative
+  max-width: 35%
+  background-color: white
+  padding: 1.25rem
+  min-width: 20rem
+  @media (max-width: 900px)
+    max-width: 50%
+  @media (max-width: 500px)
+    max-width: 95%
+.modal-wrapper
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: rgba(0, 0, 0, 0.5)
+  z-index:99
+
+.modal-header
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-bottom: 0.625rem
+
+.chage-address-title
+  height: 1.813rem
+  font-size: 1.5rem
+  display: flex
+  align-items: left
+  justify-content: left
+  margin-left: 1rem
+  font-weight: 600
+
+.close-icon
+  margin-right: 1rem
+  cursor: pointer
+.item-container
+  display: grid
+  grid-template-columns: auto auto
+  margin:1rem
+  overflow-y: scroll
+  max-height: 25rem
+  min-height: 10.5rem
+
+.rows
+  width: 100%
+  max-width:100rem
+  min-width: 18rem
+  display: inline-flex
+  flex-wrap: wrap
+  gap: 1rem
+
+.column
+  width:100%
+  max-width: 25rem
+  display: flex
+  justify-content: space-between
+  padding-top: 1.3rem
+  padding-left: 1rem
+  padding-right: 1rem
+  background-color: $dark-color-8
+  border-radius: 0.313rem
+  border: 0.063rem solid $dark-color-6
+  height: auto
+  cursor: pointer
+  padding-bottom: 1rem
+
+.icon-column
+  display: flex
+  align-items: center
+  justify-content: center
+  max-width: 25rem
+  width:100%
+  padding: 1.5rem
+  background-color: $dark-color-8
+  border-radius: 0.313rem
+  border: 0.063rem solid $dark-color-6
+  max-height: 5.813rem
+  min-height: 5.813rem
+  cursor: pointer
+
+.address
+  max-width: 20rem
+  cursor: pointer
+.user-name
+  height: 1.063rem
+  font-size: 0.938rem
+  line-height: 1rem
+  color: $dark-color-3
+  text-align: left
+.address-lines
+  max-width:20rem
+  overflow: hidden
+  height:1.063rem
+  font-size: 0.938rem
+  line-height: 1rem
+  color: $grey
+  text-align: left
+
+.button-section
+  margin-left: 1rem
+.edit-btn
+   padding-left: 1rem
+   font-size: 0.938rem
+   line-height: 1rem
+   text-align: right
+   color: $blue-dark
+   cursor: pointer
+.delete-btn
+   padding-top: 0.9rem
+   text-align: right
+   cursor: pointer
+.add-text
+  padding-left: 0.5rem
+  font-size: 0.938rem
+  line-height: 1rem
+  text-align: right
+  color: $blue-dark
+  cursor: pointer
+
+  //edit and add Address modal styles
+.item-modal
+  position: relative
+  background-color: white
+  padding-top: 2rem
+  padding-left: 6rem
+  padding-bottom: 2rem
+  max-height: 40rem
+  min-height: 12.5rem
+  max-width: 64rem
+  @media (max-width: 900px)
+    width: 90%
+    padding-left: 3rem
+    padding-top: 1rem
+  @media (max-width: 500px)
+    overflow-y: scroll
+    padding-left: 2rem
+    width: 90%
+    height: 90%
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+.edit-modal-wrapper
+   position: fixed
+   top: 0
+   left: 0
+   width: 100%
+   height: 100%
+   display: flex
+   justify-content: center
+   align-items: center
+   background-color: rgba(0, 0, 0, 0.5)
+   z-index:100
+   @media (max-width: 500px)
+     display: block
+
+
+.edit-modal-header
+  align-items: center
+  margin-bottom: 0.625rem
+
+.edit-close-icon
+  text-align: right
+  padding-right: 2rem
+  @media (max-width: 900px)
+    padding-right: 2rem
+.edit-address-title
+  text-align: center
+  height: 1.813rem
+  font-size: 1.5rem
+  font-weight: 600
+  padding-right: 4rem
+  @media (max-width: 900px)
+    padding-left: 1rem
+  @media (max-width: 500px)
+    padding-right: 2rem
+
+.edit-sub-title
+  display: flex
+  justify-content: center
+  text-align: center
+  line-height: 1.188rem
+  color: $dark-color-3
+  padding-right: 4rem
+  @media (max-width: 900px)
+    padding-left: 1rem
+  @media (max-width: 500px)
+    padding-right: 2rem
+
+.edit-item-container
+  display: flex
+  @media (max-width: 500px)
+    display: block
+
+.country
+  dispaly: flex
+  justify-content: space-between
+  text-align: left !important
+
+.label
+  font-size: 0.875rem
+  color: $dark-color-2
+  padding-top: 2rem
+
+.label1
+  font-size: 0.875rem
+  color: $dark-color-2
+  padding-top: 3rem
+  margin-left: 1rem
+
+.personal-information
+   display: flex
+   width: 100%
+   text-align: left !important
+   margin: 1rem
+   @media (max-width: 500px)
+    display: block
+
+.edit-address
+   display: flex
+   text-align: left !important
+   @media (max-width: 900px)
+     display: block
+   @media (max-width: 500px)
+     display: block
+
+.text-boxes-left
+   margin-top: 0.5rem
+   width: 23.3rem
+   z-index: 1
+   @media (max-width: 900px)
+     width: 15.5rem
+   @media (max-width: 500px)
+     width: 15.5rem
+.text-boxes-right
+    width: 16.5rem
+    margin-top: 1.5rem
+    margin-right: 1rem
+    z-index: 1
+    @media (max-width: 500px)
+      width: 15.5rem
+
+.province
+    margin-left: 1rem
+    margin-top: 0.5rem
+    @media (max-width: 500px)
+      margin-left: 1rem
+
+
+.mobile-code
+    width: 200px
+    margin-top: 1rem
+    margin-left: 2rem
+    z-index: 5
+    @media (max-width: 500px)
+       margin-left: 0rem
+       width: 100%
+
+.mobile
+  width: 25rem
+  @media (max-width: 900px)
+    width: 20rem
+  @media (max-width: 500px)
+    width: 15.5rem
+
+.right-side
+    display: flex
+    width: 40.5%
+    @media (max-width: 500px)
+      display: block
+      width: 100%
+
+.country-select
+  width: 20rem
+  margin-left: 1rem
+  margin-top: 0.5rem
+  margin-bottom: 1rem
+
+.areas
+    margin-left: 1rem
+    margin-top: 1rem
+    display: flex
+    @media (max-width: 500px)
+      display: block
+
+.zip-code
+  margin-top: 0.5rem
+  margin-left: 2rem
+  @media (max-width: 900px)
+    width: 18rem
+  @media (max-width: 500px)
+    width: 15.5rem
+    margin-left: 0rem
+.districts
+  margin-top: 0.5rem
+  margin-left: 1rem
+
+.town
+  margin-top: 0.5rem
+  margin-left: 1rem
+
+.addr-label
+   margin-left: 1.1rem
+   font-size: 0.875rem
+   color: $dark-color-2
+
+.addr
+   width: 31.3rem
+   margin-top:0.3rem
+   @media (max-width: 900px)
+     width: 15.5rem
+   @media (max-width: 500px)
+     width: 15.59rem
+.check-box-row
+    display: flex
+    text-align: left !important
+    margin: 1rem
+    padding-top: 1rem
+    padding-bottom: 1rem
+
+.texts
+    padding-top: 0.25rem
+    padding-left: 1rem
+    font-size: 0.75rem
+    line-height: 0.875rem
+    color: #000000
+
+.button-row
+  display: flex
+  text-align: left !important
+  margin-top: 2rem
+  margin-left: 1rem
+  width: 100%
+  @media (max-width: 500px)
+    display: block
+
+
+.button1
+  height: 2.5rem
+  width: 23.5rem
+  max-width:23.5rem
+  left: 23.5%
+  right: 50.64%
+  top: calc(50% - 40px/2 + 205px)
+  background: #EFEFF4
+  border: 1px solid #E0E0E0
+  border-radius: 5px
+  color: $dark-color-4
+  margin-right: 1rem
+  cursor: pointer
+  @media (max-width: 900px)
+    width: 16rem
+  @media (max-width: 500px)
+    width: 15.5rem
+.button2
+  height: 2.5rem
+  width: 23.5rem
+  max-width: 23.5rem
+  background: linear-gradient(90deg, #D50567 0.1%, #F97C7C 100%)
+  border-radius: 0.3125rem
+  color: $dark-color-8
+  border: 0.0625rem solid $main-theme-color
+  margin-left: 1rem
+  cursor: pointer
+  @media (max-width: 900px)
+    width: 16rem
+  @media (max-width: 500px)
+    margin-left: 0rem
+    margin-top: 1rem
+    width: 15.5rem
+
+.first-addr-row
+  display: flex
+  justify-content: space-between
+
+.default-addr

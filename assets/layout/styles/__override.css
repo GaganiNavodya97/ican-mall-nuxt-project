@@ -1,0 +1,4 @@
+:root{
+    --va-box-shadow: 0 0.1rem 0.1rem 0 var(--va-shadow);
+    --va-background-primary: #F6F6F6 !important;
+}

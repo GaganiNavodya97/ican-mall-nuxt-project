@@ -1,0 +1,32 @@
+@import "_variables"
+
+$va-navbar-padding-x: 1rem
+$va-navbar-padding-y: 0.5rem
+$va-navbar-search-width: 30vw
+$va-navbar-select-width: 10vw
+$va-navbar-input-chip-background-color: #F8F8F8
+
+.va-navbar
+  padding: $va-navbar-padding-y $va-navbar-padding-x
+  .logoSlot
+    padding-right: 1vw
+  .va-input
+    width: $va-navbar-search-width
+    background-color: #f2f2f2
+    border: 1px solid $main-theme-color
+    border-radius: 5px
+    .va-chip
+        color: $dark-color-5 !important
+        width: max-content !important
+        max-height: 28px
+        background-color: $va-navbar-input-chip-background-color
+        &:hover
+          background-color: $dark-color-6 !important
+    .va-input-wrapper__field:after
+      background-color: #FFFFFF
+  .va-navbar__item
+    .va-button__content
+      & > span
+        margin-left: 5px
+        color: #fff
+        font-weight: normal

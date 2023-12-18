@@ -1,0 +1,217 @@
+@import "@/assets/layout/styles/__variables.sass"
+.main-section
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+.content
+  display: block
+  width: 80vw
+  height: auto
+  max-width: $section-max-width
+  padding-bottom: 1rem
+
+.header-section
+  margin-top: 1rem
+  margin-bottom: 1rem
+
+.page-title
+  font-size: 24px
+  font-style: normal
+  font-weight: 400
+  line-height: normal
+  padding-left: 1rem
+
+.product-item-container
+  display: flex
+  width: 80vw
+  height: auto
+  max-width: $section-max-width
+  margin-top: 1.25rem
+  background-color: #fff
+  @media (max-width: 500px)
+    align-items: center
+
+.order-discription
+  display: flex
+  justify-content: space-between
+
+.product-image
+  margin: 1rem
+
+.image
+  height: 8rem
+  width: 8rem
+
+.item-card-left
+   display: flex
+
+.prod-details
+  margin-top: 1rem
+.prod-name
+  width: 45rem
+.name
+  font-size: 1rem
+  font-weight: 600
+  width: 25rem
+
+.prod-sku
+  margin-top: 1rem
+  width: 8rem
+  padding: 0.5rem
+  border-radius: 15px
+  border: 1px solid #000
+  font-size: 0.9rem
+  text-align: center
+
+.chip
+  margin-top: 1rem
+  padding: 0.5rem
+  margin-bottom: 0.5rem
+  width: 8rem
+ 
+.price-section
+  margin-top: 1rem
+  display: block
+  justify-content: space-between
+  @media (max-width: 900px)
+    margin-left: 15rem
+  @media (max-width: 500px)
+    display: none
+    margin-left: 0rem
+
+.price-section-mobile
+  margin-top: 1rem
+  display: flex
+
+.price-dev
+  padding-bottom: 5.5rem
+  justify-content: flex-end !important
+  margin-left: auto
+
+.price
+  font-size: 20px
+  font-weight: 600
+  margin: 1rem
+  margin-left: auto
+  justify-content: flex-end !important
+
+
+.number-of-items
+  font-size: 0.9rem
+  font-weight: 600
+  text-align: right
+
+.number-of-items-mobile
+  font-size: 0.9rem
+  font-weight: 600
+
+.rating-conatainer
+  padding-top: 0.3rem
+  display: block
+  align-items: center
+  width: 80vw
+  height: auto
+  max-width: $section-max-width
+  margin-top: 0.7rem
+  background-color: #fff
+  padding-bottom: 1rem
+  @media (max-width: 500px)
+     align-items: center
+
+.header-bottom
+   text-align: center
+   margin: 1rem
+   font-size: 1rem
+
+.rate-star
+  display: flex
+  align-items: center
+  text-align: center
+  margin-left: 28rem
+  @media (max-width: 900px)
+    margin-left: 15rem
+  @media (max-width: 500px)
+    margin-left: 1rem
+.rates
+  align-items: center
+  text-align: center
+.rating-body
+  margin: 1rem
+  display: flex
+  row-gap: 1rem
+  grid-template: auto
+  grid-template-columns: auto atuto
+  justify-content: space-between
+  @media (max-width: 500px)
+    display: block
+
+.text-area
+  margin-top: 1rem
+  margin-bottom: 1rem
+  width: 100%
+  display: block
+  
+// .custom-upload-file-area
+//   width: 25rem
+//   padding: 1rem
+//   border: 1px solid #cccccc
+//   text-align: center
+//   @media (max-width: 900px)
+//     width: 16rem
+.image-uploader
+  width: 25rem
+  height:8rem 
+  background: var(--red, #F7F8F9)
+  align-items: center
+  text-align: center
+  padding:3rem
+  @media (max-width: 900px)
+    width: 20rem
+  @media (max-width: 500px)
+    width: 16rem
+
+.uploaded-image
+  width: 60px
+  height: 60px
+  margin: 0.5rem
+  @media (max-width: 900px)
+    margin: 0.5rem
+    width: 70px
+    height: 70px  
+  @media (max-width: 500px)
+    margin: 0.3rem
+    width: 50px
+    height: 50px
+.Anonymous-radio
+  margin-left: 1rem
+  padding-bottom: 1rem
+
+.submit-button
+  width: 15rem
+  height: 2.7rem
+  text-align: center
+  margin-left: 25rem
+  border-radius: 5px
+  background: var(--red, #EB5757)
+  color: var(--system-white-default, #FFF)
+  padding-top: 0.7rem
+  margin-bottom: 1rem
+  cursor: pointer
+  @media (max-width: 900px)
+    margin-left: 12rem
+  @media (max-width: 500px)
+    margin-left: 2.5rem
+  @media (max-width: 360px)
+    margin-left: 1.5rem
+.price-dev-mobile
+  margin-bottom: 1rem
+  @media (min-width: 500px)
+    display: none
+
+.image-upload-container
+  dispaly: flex !important
+  flex-direction: row
+  justify-content: space-between
+  

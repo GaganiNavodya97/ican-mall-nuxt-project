@@ -1,0 +1,133 @@
+@import "@/assets/layout/styles/__variables.sass"
+.modal
+  z-index: 300 !important
+.login-container
+  width: 100vw
+  max-width: 100%
+  overflow-y: hidden
+  max-height: 560px
+  @media (max-width: 575px)
+    overflow-x: hidden
+  @media (max-width: 414px)
+    margin: 0px
+
+.login-container.row
+  @media (max-width: 575px)
+    width: 100%
+    justify-content: center
+
+.card-title
+  padding-left: 0.25rem
+  font-size: 1.5rem
+  text-transform: none
+  color: $dark-color-2
+
+.content-container
+  padding: 1rem
+  @media (max-width: 767px)
+    margin-top: 2rem
+    width: 100%
+    padding: 0rem
+  @media (max-width: 575px)
+    max-width: 450px
+    padding: 0rem
+  @media (max-width: 460px)
+    max-width: 360px
+    padding: 0rem
+  @media (max-width: 370px)
+    max-width: 320px
+    padding: 0rem
+
+.input-container
+  display: flex
+  flex-direction: column
+  margin-top: 1rem
+  margin-bottom: 1.5rem
+  color: $dark-color-4
+  font-size: 0.875rem
+  font-weight: lighter
+  text-align: left
+
+.phone-number-container
+  display: flex
+  flex-direction: row
+
+.code-select
+  max-width: 50%
+  margin-right: 0.5rem
+  @media (max-width: 575px)
+    max-width: 50%
+
+.input-container:nth-child(2)
+  margin-bottom: 0.25rem
+
+.forgot-password-container
+  float: right
+  font-size: 0.875rem
+  color: $blue-dark
+.forgot-password-label
+  cursor: pointer
+
+.main-theme-button
+  margin-top: 1.5rem
+  width: 100%
+  font-size: 1rem
+  font-weight: normal
+
+.header-container
+  margin-left: 1rem
+  display: flex
+  flex-direction: row
+  flex-wrap: initial
+  align-items: center
+
+.card-content-container
+  padding-top: 0rem
+
+.main-header-container
+  padding-right: 1rem
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.img-container
+  @media (max-width: 767px)
+    display: none
+
+.login-toggle
+  color: $blue-dark
+  cursor: pointer
+  width: max-content
+  float: right
+  margin-right: 1rem
+
+.reset-toggle
+  color: $blue-dark
+  cursor: pointer
+  width: max-content
+  float: right
+//FORGOT PASSWORD MODAL
+
+.forgot-container
+  text-align: center
+  padding-left: 5rem
+  padding-right: 5rem
+  padding-bottom: 1rem
+  @media (max-width: 835px)
+    padding-left: 2rem
+    padding-right: 2rem
+  .h1-container
+    font-size: 1.5rem
+    padding: 1rem
+.reset-header
+  padding-bottom: 1rem
+
+.input-tag
+  display: flex
+
+.reset-header-container
+  display: flex
+  flex-direction: row
+  flex-wrap: initial
+  align-items: center
+  justify-content: space-between
